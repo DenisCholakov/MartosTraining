@@ -1,0 +1,77 @@
+:root {
+    --navigation-text: #FFF2D8;
+    --navigation-background: #232D3F;
+    --navigation-hover-background: #5D12D2;
+    --text-color: #F5F5DC;
+    --border-color: #FFCF9D;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url("./images/background.jpg");
+    color: var(--text-color);
+}
+
+nav.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--navigation-background);
+    height: 2rem;
+    align-items: center;
+}
+
+nav.navigation li.nav_link {
+    list-style: none;
+}
+
+nav.navigation li.nav_link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--navigation-text);
+    height: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+nav.navigation li.nav_link a:hover {
+    cursor: pointer;
+    background-color: var(--navigation-hover-background);
+}
+
+nav.navigation div.search_bar button.search_button {
+    padding: 0.2rem 0.4rem;
+    border: solid 1px var(--border-color);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--navigation-text);
+}
+
+nav.navigation div.search_bar button.search_button:hover {
+    cursor: pointer;
+    background-color: var(--navigation-hover-background);
+    border: none;
+}
+
+/* people section */
+
+section#people_section h1 {
+    text-align: center;
+}
+
+section#people_section div.people_content {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+section#people_section div.people_content div.person_card {
+    border: solid 2px var(--border-color);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
